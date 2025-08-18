@@ -74,14 +74,14 @@ jobs:
           S3_PREFIX: ${{ secrets.S3_PREFIX }}  # must match Streamlit config
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          QSW_TRIALS: 600
+          QSW_TRIALS: 1200
           QSW_PHASE_LEN: 8
           QSW_MAX_STEPS: 30
-          QSW_BATCH: 256
-          QSW_MAX_RETRIES: 12
-          QSW_BACKOFF: 2.0
+          QSW_BATCH: 512
+          QSW_MAX_RETRIES: 18
+          QSW_BACKOFF: 3.0
           QSW_PURE: 1
           QSW_QRNG_PROVIDERS: anu
           QSW_CONDITIONS: quantum,pseudo,deterministic
-          QSW_PURE_MAX_WAIT: 1500
+          QSW_PURE_MAX_WAIT: 1800
           QSW_RUN_NAME: all
